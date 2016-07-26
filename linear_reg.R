@@ -21,7 +21,7 @@ summary(model)
 # Since the value of R square is not increased much that means the variables doesnt 
 # play much role.They are not dependent much or insignificant variables are there
 
-# We wanted to use log(lstat) and not lstat
+# We want to use log(lstat) and not lstat
 
 model <- lm(medv~. + log(lstat)-lstat, data = training_data)
 summary(model)
